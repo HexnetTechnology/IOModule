@@ -1,6 +1,9 @@
 # Ignored Files
 /build/
+/out/
 /managed_components/
+/.cache/
+/.vs/
 dependencies.lock
 sdkconfig
 sdkconfig.old
