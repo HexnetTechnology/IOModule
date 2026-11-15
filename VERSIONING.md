@@ -12,7 +12,7 @@ myhexnet / Cuvals takip modeliyle aynı dil:
 
 - `VERSION.json` — tek kaynak (SoT)
 - `changelog.json` — mikro geçmişi
-- `VERSION` — makro (legacy)
+- `VERSION` — mikro (ör. `v0.60-0004`; Display ile aynı)
 - `main/hexnet_version.h` — `HEXNET_IO_RELEASE` / `HEXNET_IO_MICRO`
 - `scripts/Sync-VersionFiles.ps1` — JSON → header/CMake
 - `scripts/Bump-Version.ps1` — `-Bump micro|macro`
