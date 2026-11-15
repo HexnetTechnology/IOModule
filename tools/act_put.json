@@ -1,0 +1,25 @@
+{
+    "name":  "hexnet_webhook_ingest",
+    "resource_opts":  {
+                          "inflight_window":  100,
+                          "query_mode":  "async",
+                          "request_ttl":  "45s",
+                          "health_check_interval":  "15s",
+                          "worker_pool_size":  16,
+                          "max_buffer_bytes":  "256MB"
+                      },
+    "connector":  "hexnet_http_local",
+    "description":  "Hexnet telemetry ingest",
+    "type":  "http",
+    "enable":  true,
+    "parameters":  {
+                       "body":  "{\r\n  \"topic\": \"${topic}\",\r\n  \"payload\": ${payload},\r\n  \"clientid\": \"${clientid}\",\r\n  \"username\": \"${username}\",\r\n  \"event\": \"message.publish\"\r\n}",
+                       "path":  "",
+                       "headers":  {
+                                       "X-Hexnet-Mqtt-Secret":  "x-hexnet-2026-secret",
+                                       "content-type":  "application/json"
+                                   },
+                       "max_retries":  2,
+                       "method":  "post"
+                   }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "version": "v0.60-0004",
+    "module": "mqtt-ble-channels-payload",
+    "date": "2026-11-13",
+    "changes": [
+      "MQTT telemetri max 3072→12288: channels (ikon) paketi düşüyordu, platform SoT gelmiyordu",
+      "BLE channels JSON max 3200→8192: tablet ikon paketi sığmıyordu",
+      "want_channels bayrağı yalnızca publish başarılı olunca düşer"
+    ]
+  },
+  {
+    "version": "v0.60-0003",
+    "module": "label-sync-ble-mqtt",
+    "date": "2026-11-13",
+    "changes": [
+      "0x764 label-sync: CAN yanında BLE+MQTT channels sticky — tablet/platform aynı ikon SoT"
+    ]
+  },
+  {
+    "version": "v0.60-0002",
+    "module": "can-label-sync-req",
+    "date": "2026-11-13",
+    "changes": [
+      "CAN 0x764: Display bağlanınca buton ikon/isim SoT ister",
+      "IO yanıt: 0x110 + 0x111/112 + 0x118/119 (MQTT/BLE flood yok)"
+    ]
+  },
+  {
+    "version": "v0.60-0001",
+    "module": "platform",
+    "date": "2026-11-07",
+    "changes": [
+      "Makro/mikro sürüm yönetimi eklendi (VERSION.json + changelog + Sync/Bump)",
+      "Notify async kuyruk, MQTT lifecycle guard, offline telemetry PSRAM"
+    ]
+  }
+]

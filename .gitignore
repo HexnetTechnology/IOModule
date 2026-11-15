@@ -1,0 +1,10 @@
+# Ignored Files
+/build/
+/managed_components/
+dependencies.lock
+sdkconfig
+sdkconfig.old
+port.local.cmd
+idf_path.local.cmd
+*.pyc
+.vscode/settings.json

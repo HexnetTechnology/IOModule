@@ -1,0 +1,19 @@
+{
+  "product": "io-module",
+  "name": "Hexnet IO Module",
+  "line": "v0-60",
+  "makro": "v0.60",
+  "mikro": "v0.60-0004",
+  "semver": "0.60.0",
+  "versionCode": 60004,
+  "build_date": "2026-11-13",
+  "build_name": "IOModule-v0-60",
+  "modules": {
+    "can": "v0.60-0004",
+    "ble": "v0.60-0004",
+    "mqtt": "v0.60-0004",
+    "wifi": "v0.60-0001",
+    "ota": "v0.60-0001"
+  },
+  "notes": "MQTT channels 12KB + want_channels clear-on-success; Display/tablet/platform ikon SoT"
+}

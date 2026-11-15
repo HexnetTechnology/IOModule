@@ -1,0 +1,34 @@
+{
+    "enable":  true,
+    "url":  "https://myhexnet.com",
+    "type":  "http",
+    "connect_timeout":  "15s",
+    "ssl":  {
+                "enable":  true,
+                "depth":  10,
+                "secure_renegotiate":  true,
+                "hibernate_after":  "5s",
+                "log_level":  "notice",
+                "verify":  "verify_none",
+                "ciphers":  [
+
+                            ],
+                "versions":  [
+                                 "tlsv1.3",
+                                 "tlsv1.2"
+                             ],
+                "reuse_sessions":  true
+            },
+    "headers":  {
+                    "content-type":  "application/json"
+                },
+    "name":  "hexnet_http_local",
+    "pool_type":  "random",
+    "pool_size":  8,
+    "enable_pipelining":  100,
+    "resource_opts":  {
+                          "start_timeout":  "5s",
+                          "start_after_created":  true,
+                          "health_check_interval":  "15s"
+                      }
+}
